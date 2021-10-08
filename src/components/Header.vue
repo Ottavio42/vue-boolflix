@@ -1,9 +1,13 @@
 <template>
 	<header>
-		<form>
-			<input type="text" v-model="searchText">
-			<button type="submit" @click.prevent="$emit('searching', searchText)">Cerca</button>
-		</form>
+        <nav>
+            <div class="logo">BOOLFLIX</div>
+            <form>
+                <input type="text" v-model="searchText">
+                <button type="submit" @click.prevent="$emit('searching', searchText)">Cerca</button>
+            </form>
+        </nav>
+		
 	</header>
 </template>
 
@@ -18,5 +22,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+header{
+    padding: .9375rem;
+    background-color: #000;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            color: red;
+            font-size: 1.875rem;
+            font-weight: 600;
+        }
+    }
+}
 </style>
