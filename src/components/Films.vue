@@ -26,5 +26,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.container{
+	background-color: #434343;
+	padding: .9375rem;
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+	}
+}
 </style>
