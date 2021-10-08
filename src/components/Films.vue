@@ -36,5 +36,8 @@ export default {
 		list-style: none;
 		justify-content: space-around;
 	}
+	h2{
+		color: #fff;
+	}
 }
 </style>
